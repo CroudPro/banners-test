@@ -3,7 +3,7 @@ import { EBannerEvents, EBannerType, ECustoms } from "../../interfaces";
 import { AdriverBanner } from "../../Banner";
 
 export class ClickEvent extends BannerEvent {
-    public customs: ECustoms[] = [ECustoms.BANNER_WIDTH, ECustoms.HEIGHT, ECustoms.BANNER_TYPE, ECustoms.BANNER_ID];
+    public customs: ECustoms[] = [ECustoms.BANNER_WIDTH, ECustoms.BANNER_HEIGHT, ECustoms.BANNER_TYPE, ECustoms.BANNER_ID];
     public id: number = 3;
     protected banner: AdriverBanner;
 
