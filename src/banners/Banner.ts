@@ -50,7 +50,6 @@ export class AdriverBanner extends Events<BannerEvents> {
     }
 
     public remove() {
-        console.log(this.slot, this.bannerElement);
         this.clear();
         this.removed = true;
         if (!this.slot || !this.bannerElement) {
