@@ -47,7 +47,7 @@ export class ConsecutiveVisible extends BannerEvent {
                 this.timer = setTimeout(() => {
                     this.observer?.unobserve(entry.target);
                     this.sendEvent();
-                }, 1000);
+                }, 3500);
             } else if (this.timer) {
                 clearTimeout(this.timer);
             }
