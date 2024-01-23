@@ -74,6 +74,8 @@ export class AdriverBanners extends Events<AdriverBannersEvents> {
                     founded[0].sendError();
                 }
             } else {
+                // TODO: maybe add check for 2nd error response, not in specifications
+                // May be network error
                 this.sendBeacon(event, true);
             }
         }).then(() => {
